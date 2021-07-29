@@ -1,6 +1,163 @@
-.nav ul {
+html {
+    background-color: palegoldenrod;
+}
+/* Nav bar styling */
+
+nav {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    border: 1px solid black;
+    font-weight: bold;
+  }
+
+nav a {
+    color: black;
+    font-weight: 300;
+    letter-spacing: 2px;
+    text-decoration: none;
+    padding: 20px 5px;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+}
+
+nav a:hover {
+    background: rgba(238, 13, 13, 0.75);
+ }
+
+nav li {
+    flex: 3;
+}
+
+nav .user {
+    flex: 3;
+    padding-right: 20px;
+}
+
+/* Heading styling */
+
+.heading {
+    text-align: center;
+    font-size: 60px;
+}
+
+/* Main content Styling */
+
+.main-container {
+    display: flex;
+    margin-top: 40px;
+    justify-content: space-around;
+}
+
+.run { 
+    width: 373px;
+}
+
+.better {
+    width: 373px;
+}
+
+.together {
+    width: 373px;
+}
+
+/* newsletter styling */
+.newsletter {
+    margin-top: 40px;
+    background-image: url(./images/subscribe.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 600px;
+    display: flex;
+    color: white;
+    font-size: 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+.subscribe {
+    width: 400px;
+    margin-right: 70px;
+    text-align: center;
+}
+
+.tester {
+    width: 400px;
+    margin-left: 70px;
+    text-align: center;
+}
+button {
+    border-radius: 20px;
+}
+
+button:hover {
+    background-color: cyan;
+}
+
+/* contact details and socials */
+.socials {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    margin-top: 40px;
+    font-size: 16px;
+}
+
+.socials a { 
+    text-decoration: none;
+    color: black;
+}
+
+.socials a:hover {
     text-decoration: underline;
-    list-style: none; 
-    margin: 0; 
-    padding: 0; 
+    color: blue;
+}
+
+.socials .contact {
+    padding: 20px 5px;
+    margin-left: 20px;
+    width: 300px;
+}
+
+.socials .info {
+    padding: 20px 5px;
+    width: 300px;
+}
+
+.socials .follow {
+    padding: 20px 5px;
+    margin-right: 20px;
+    width: 300px;
+}
+
+h4 {
+    text-decoration: underline;
+    text-transform: uppercase;
+}
+
+.fa-facebook-square {
+    color: #4267B2;
+    font-size: 30px;
+}
+
+.fa-instagram-square {
+    color: #e95950;
+    font-size: 30px;
+}
+
+.fa-twitter-square {
+    color: #1DA1F2;
+    font-size: 30px;
+}
+
+/* Copyright info */
+
+#copy {
+    float: left;
+    font-size: 0.75em;
+    margin-left: 5px;
 }
