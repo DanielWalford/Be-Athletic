@@ -80,7 +80,7 @@ h3 {
 .newsletter {
     margin-top: 40px;
     background-image: url(../resources/images/subscribe.jpeg);
-    background-size: cover;
+    background-size: 100% 100%;
     background-repeat: no-repeat;
     height: 600px;
     display: flex;
@@ -93,13 +93,13 @@ h3 {
 
 .subscribe {
     width: 400px;
-    margin-right: 70px;
+    margin-right: 100px;
     text-align: center;
 }
 
 .tester {
     width: 400px;
-    margin-left: 70px;
+    margin-left: 100px;
     text-align: center;
 }
 button {
@@ -184,21 +184,27 @@ h4 {
         flex: 1 1 50%;
         height: auto; }
 
-    .socials, .main-container, .newsletter {
+    .socials, .main-container {
         -webkit-flex-direction: column;
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        font-size: 14px;
         }
 
-    .subscribe {
-        display: none;
-   }   
+    .newsletter {
+        font-size: 14px;
+    }
 
-   .tester {
-      max-width: 50%;
-   }
+    .contact {
+        margin-left: 0px !important;
+    }
+
+    .follow {
+        margin-right: 0px !important;
+    }
 }
+
 
   @media (max-width: 600px) {
       .socials, .main-container, .newsletter {
@@ -206,6 +212,8 @@ h4 {
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        text-align: center;
+        
     }
     
     .subscribe {
@@ -213,6 +221,15 @@ h4 {
    }   
 
    .tester {
-      max-width: 50%; ;
+      max-width: 50%;
+      margin: 0; 
    }
-  }
+  
+    .contact {
+        margin-left: 0px !important;
+    }
+
+    .follow {
+        margin-right: 0px !important;
+    }
+}
